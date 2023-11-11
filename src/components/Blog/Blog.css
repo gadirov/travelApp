@@ -1,0 +1,68 @@
+.blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('..//..//assets/blog/blogbg.jpeg') !important;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 384px;
+}
+
+.card-button{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 72px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card-button div{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    border-radius: 100px;
+    background:  #dee1e4;
+    cursor: pointer;
+}
+.card-button .selected-button{
+    background-color: #4A21EF;
+    color:#fff;
+}
+.twocards{
+    grid-template-columns: auto auto !important;
+}
+.twocard{
+    width: 40vw;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .card-button div{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .card-button div{
+        font-size: 10px;
+    }
+    .card-button{
+        padding: 72px 0 0 0 ;  
+    }
+}
+@media screen and (max-width: 550px) {
+    .card-button {
+        gap: 10px;
+    }
+    .card-button div{
+        width: 60px;
+    }
+    .twocards{
+        grid-template-columns: auto!important;
+    }
+    .twocard{
+        width: 90vw;
+    }
+}

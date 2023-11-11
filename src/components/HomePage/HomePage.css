@@ -1,0 +1,470 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  }
+.section_1{
+  gap: 60px;
+  width: 90vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  border-radius: 10px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//..//assets/bg.gif);
+}
+  
+.section-text{
+  color: white;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-text h1{
+  font-size: 48px;
+  margin: 20px 0;
+}
+  
+.search-bar{
+  width: 400px; 
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 48px;
+  padding: 8px 8px 8px 24px;
+}
+
+.search-bar input{
+  width: 100%;
+  height: 50px;
+  border: none;
+}
+.search-bar input:focus{
+  outline: none;
+}
+.section_1 img{
+  width: 30px;
+  height: 28px;
+  padding: 8px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #4A21EF;
+}
+  /* //Scroll part */
+.scroll{
+  width: 10px;
+  gap: 8px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  flex-shrink: 0;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 100px;
+  background: #4A21EF;
+}
+
+
+.section_2 {
+  width: 90vw;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.section_2 h1{
+  text-align: center;
+  font-size: 48px;
+}
+.section_2 .cards{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 50px;
+}
+.card{
+  width: 25vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 8px 6px -6px black;
+}
+.card .image-part{
+  height: 270px;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 10px;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.card .image-part .sparkles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  height: 25px;
+  gap: 8px;
+  font-size: 20px;
+  color: white;
+  background-color: #4A21EF;
+  border-radius: 20px;
+}
+.card .image-part .sparkles img{
+  width: 20px;
+  height: 20px;
+}
+
+.card .image-part .bookmark{
+  width: 36px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #EEECFE;
+}
+.card .text-part {
+  padding: 20px;
+}
+.card .text-part div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Why US Section  */
+.section-3{
+  width: 90vw;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.section-3 h1{
+  font-size: 48px;
+  text-align: center;
+}
+
+.whyus-cards{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 40px;
+}
+.whyus-card{
+  width:21vw;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: #dad9d9;
+  border-radius: 10px;
+}
+.whyus-card .icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #4A21EF;
+  border-radius: 100px;
+}
+.whyus-card  p{
+  font-size: 20px;
+}
+.whyus-card .whyus-text{
+  display: flex;
+  flex-direction: column;
+}
+.whyus-card .whyus-text .title{
+  font-weight: bold;
+}
+.whyus-card .whyus-text p{
+  margin: 5px 0;
+  font-size: 16px;
+}
+/* // OurLocalExperts Parts */
+.section-4{
+  width: 90vw;
+  margin-bottom: 100px;
+}
+.section-4 h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.ourLocalExperts{
+  display: flex;
+  justify-content: center;
+}
+
+.ourLocalExperts .left-img{
+  width: 35vw;
+}
+.ourLocalExperts .right-img{
+  position: relative;
+  top: 50px;
+  width: 35vw;
+}
+
+#section-5{
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-size: cover;
+  margin: 50px auto;
+  background: url('..//..//assets/section5.png')  no-repeat;
+  background-size: cover;
+}
+.section-5{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 50px 50px 0;
+}
+.topSection-5{
+  display: flex;
+  padding: 24px 32px;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.topSection-5 .p{
+  color: #4A21EF;
+  font-weight: 700;
+  line-height: 5px;
+}
+.bottomSection5{
+  display: flex;
+  padding: 10px 32px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+  gap: 15px;
+}
+.bottomSection5 .bottomSection5-icon{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background-color: #4A21EF;
+}
+.bottomSection5-text div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+/* Our-destination Start*/
+#our-destination{
+  background-color: #4A21EF;
+  padding: 72px 0;
+  width: 100vw;
+  margin-bottom: 100px;
+  margin: 0;
+}
+#our-destination div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+#our-destination div h1{
+  color: white;
+  font-size: 36px;
+}
+
+#our-destination .destination {
+  display: flex;
+  padding: 0 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#our-destination .destination p{
+  font-size: 24px;
+  color: #4A21EF;
+}
+
+/* Join US part */
+
+#joinus-section{
+  padding: 80px 0px;
+  width: 100vw;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+#joinus-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 5px auto;
+}
+#joinus-section p{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px auto 40px auto ;
+}
+
+#joinus-section .email-part{
+  display: flex;
+  height: auto;
+  padding: 8px 8px 8px 24px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 99px;
+  border:  1px solid #C9D2DA;
+  background-color: #fff;
+  justify-content: space-between;
+}
+#joinus-section .email-part input{
+  padding: 20px 24px;
+  border: none;
+  font-size: 16px;
+}
+#joinus-section .email-part input:focus{
+  outline: none;  
+}
+
+#joinus-section .email-part .signup{
+  display: flex;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  background-color: #4A21EF;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .section_2 .cards {
+    grid-template-columns: auto auto;
+  }
+  .card {
+    width: 40vw;
+  }
+  .ourLocalExperts .left-img {
+    width: 45vw;
+  }
+  .ourLocalExperts .right-img {
+
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section_2 .cards {
+    grid-template-columns: auto;
+  }
+  .card {
+    width: 90vw;
+  }
+  .whyus-cards {
+    grid-template-columns: auto;
+
+  }
+  .whyus-card {
+    width: 80vw;
+  }
+  .ourLocalExpertsforsmallsize {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section_1{
+    width: 90vw;
+    height: 350px;
+  }
+  .section-text {
+    width: 80vw;
+  }
+  .section-text h1 {
+    font-size: 30px;
+  }
+  .search-bar {
+    width: 300px;
+    padding: 0px 8px 0px 24px
+  } 
+  #section-5 {
+    height: 500px;
+  } 
+  .section-5 {
+    width: 350px;
+    margin: 0 10px 10px 0;
+  }
+  .topSection-5{
+    height: 200px;
+    padding: 16px;
+  }
+  .topSection-5 p{
+    font-size: 14px;
+  }
+
+  #our-destination .destination {
+    margin: 0;
+    width: 75vw;
+  }
+  #our-destination div{
+    margin: 0 20px;
+  }
+  #our-destination div h1 {
+    font-size: 25px;
+  }
+  #our-destination .destination p {
+    padding: 0;
+    margin: 24px 0 24px 0;
+    font-size: 16px;
+  }
+  #joinus-section h1 {
+    font-size: 32px;
+  }
+  #joinus-section p {
+    font-size: 16px;
+  }
+  #joinus-section .email-part{
+    padding: 0 8px 0 24px;
+  }
+  #joinus-section .email-part .signup {
+    padding: 16px;
+  }
+}

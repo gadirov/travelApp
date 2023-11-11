@@ -1,0 +1,112 @@
+#section1{
+    gap: 60px;
+    width: 90vw;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//..//assets/italy.gif);
+}
+
+#section2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 120px 0px 0px 0px;
+}
+#section2 .section2{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+#section2 .section2 .list p{
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #4A21EF;
+}
+#section2 .section2 .list ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#section2 .section2 .list ul li{
+    font-size: 20px;
+    line-height: 30px;
+}
+#section2 .section2 .list ul li a{
+    color:black;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.destinationimage{
+    background-image: url('../..//assets/./destinationcards/destinationimage.jpeg') !important;
+}
+
+.section2-mobileversion{
+    width: 90vw;
+    display: flex;
+    padding-top: 10px;
+    background: #FFF;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid  #E3E7EB;
+}
+
+.section2-mobileversion p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #4A21EF;
+}
+
+.dropdown-active{
+    gap: 100px;
+    columns: 2;
+    font-size: 16px;
+    overflow: hidden;
+    max-height: 200px;
+    line-height: 30px;
+    text-align: justify;
+    list-style-type: none;
+    transition: max-height 0.5s ease;
+    column-rule: 1px solid #E3E7EB;
+    
+}
+.dropdown-active li a{
+    color:black;
+    font-weight: bold;
+    text-decoration:none;
+}
+.dropdown-not-active{
+    gap: 100px;
+    columns: 2;
+    max-height: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: justify;
+    list-style-type: none;
+    transition: max-height 0.5s ease;
+}
+
+@media screen and (max-width: 850px) {
+    #section2{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #section1{
+        height: 350px;
+    }
+    #section2{
+        align-items: center;
+    }
+    .whyus-card {
+        padding: 25px;
+    }
+}
