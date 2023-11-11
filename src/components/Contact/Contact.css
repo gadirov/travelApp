@@ -59,4 +59,7 @@
     .contact-info {
         flex-direction: column;
     }
+    .contact-header{
+        font-size: 60px !important;
+    }
 }

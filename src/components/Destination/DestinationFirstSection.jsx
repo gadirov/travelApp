@@ -5,7 +5,7 @@ export default function DestinationFirstSection () {
     <section>
         <div id='section1'>
             <div className="section-text">
-                <h1>Explore places on Tourista</h1>
+                <h1 className='destination-header'>Explore places on Tourista</h1>
                 <p>Destinations</p>
             </div>
         </div>

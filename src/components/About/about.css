@@ -31,3 +31,11 @@
         width: 90vw;
     }    
 }
+@media screen and (max-width: 550px) {
+    .about-section2 {
+        width: 90vw;
+    }    
+    .about-header{
+        font-size: 60px !important;
+    }
+}

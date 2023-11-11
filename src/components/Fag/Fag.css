@@ -93,4 +93,7 @@
     .accordion-cards .text p{
         font-size: 16px;
     }
+    .section-text p{
+        text-align: center;
+    }
 }

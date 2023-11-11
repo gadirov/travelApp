@@ -5,7 +5,7 @@ export default function ContactFirstSection() {
     <section>
         <div className="section_1 contact">
             <div className="section-text">
-                <h1 className='text-italy'>Contact us</h1>
+                <h1 className='text-italy contact-header'>Contact us</h1>
                 <p>Blog articles for  "Inspiration"</p>
             </div>
         </div>
