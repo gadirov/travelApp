@@ -1,13 +1,21 @@
-import React from "react";
+import {React, useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "..//..//assets/Logo.svg";
 import appleIcon from "..//..//assets/apple-icon.svg";
 import googleIcon from "..//..//assets/google-icon.svg";
 import fbIcon from "..//..//assets/fb-icon.svg";
 import signinbackarrow from "..//..//assets/signin-back-arrow.svg";
+import eyeicon from "..//..//assets/eyeiconforsignin.svg";
+import hideeyeicon from "..//..//assets/hideeyeicon.png";
 import "./Signin.css";
 export default function Main() {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="right">
       <div className="right-section">
@@ -37,12 +45,15 @@ export default function Main() {
             <div className="label">
               <label htmlFor="">Password</label>
             </div>
+            <div className="eye">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
-              className="text"
+              className="password"
               placeholder="********"
             />
+            <img src={showPassword ? hideeyeicon : eyeicon} alt="eyeicon" onClick={togglePasswordVisibility}/>
+            </div>
           </div>
           <p className="forgot-password">
             <Link to="forgot-password">Forgot password?</Link>
