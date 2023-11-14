@@ -39,10 +39,26 @@ export default function Header() {
                                 <li><Link to="/contact">Contact us</Link></li>
                             </ul>
                         </nav>
-                        <div>
-                            <p>US$</p>
-                            <img src={SelectorIcon} alt="SelectorIcon" />
-                        </div>
+                        <select>
+                            <option value="US">
+                                <div>
+                                <p>US$</p>
+                                <img src={SelectorIcon} alt="SelectorIcon" />
+                                </div>
+                            </option>
+                            <option value="AZ">
+                                <div>
+                                <p>AZ ₼</p>
+                                <img src={SelectorIcon} alt="SelectorIcon" />
+                                </div>
+                            </option>
+                            <option value="Rubl">
+                                <div>
+                                <p>Rubl ₽</p>
+                                <img src={SelectorIcon} alt="SelectorIcon" />
+                                </div>
+                            </option>
+                        </select>
                     </div>
                 </header>
                 <nav className="bottom-header">

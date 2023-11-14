@@ -52,7 +52,7 @@ export default function Main() {
               className="password"
               placeholder="********"
             />
-            <img src={showPassword ? hideeyeicon : eyeicon} alt="eyeicon" onClick={togglePasswordVisibility}/>
+            <img src={showPassword ? eyeicon : hideeyeicon} alt="eyeicon" onClick={togglePasswordVisibility}/>
             </div>
           </div>
           <p className="forgot-password">

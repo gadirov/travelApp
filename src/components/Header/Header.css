@@ -38,7 +38,15 @@ body{
     text-align: center;
     font-style: normal;
     text-decoration: none;
+  }
+  .top-header select{
+    background: transparent;
+    border: none;
+    outline: none;
     cursor: pointer;
+  }
+  .top-header select option{
+    background: #F5F7FA;
   }
   .top-header div{
     display: flex;
