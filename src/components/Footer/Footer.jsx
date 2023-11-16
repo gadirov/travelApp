@@ -1,4 +1,5 @@
-import React from 'react'
+import {React} from 'react'
+import {Link} from 'react-router-dom'
 import Logo from '..//..//assets/Logo.svg'
 import './Footer.css'
 export default function Footer() {
@@ -13,17 +14,17 @@ export default function Footer() {
             <div className="footer-secondPart part">
                 <p>Menu</p>
                 <ul>
-                    <li>Destinations</li>
+                    <li><Link to="/destination">Destinations</Link></li>
                     <li>Private trips</li>
-                    <li>Blog</li>
-                    <li>About us</li>
+                    <li><Link to="/about">Blog</Link></li>
+                    <li><Link to="/about">About us</Link></li>
                 </ul>
             </div>
             <div className="footer-thirdPart part">
                 <p>Support</p>
                 <ul>
-                    <li>Contact us</li>
-                    <li>FAQ</li>
+                    <li><Link to="/contact">Contact us</Link></li>
+                    <li><Link to="/fag">FAQ</Link></li>
                     <li>Privacy Policy</li>
                     <li>Terms of Use</li>
                 </ul>

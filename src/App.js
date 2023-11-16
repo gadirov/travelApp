@@ -1,39 +1,41 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Homepage from './pages/Homepage'
-import HomePageMain from './components/HomePage/Main'
-import MainDestination from './components/Destination/MainDestination';
-import MainDestinationItaly from './components/DestinationItaly/MainDestinationItaly';
-import MainAbout from './components/About/MainAbout';
-import MainFag from './components/Fag/MainFag';
-import MainBlog from './components/Blog/MainBlog'
-import MainContact from './components/Contact/MainContact'
+import Pages from './pages/Pages'
+import HomePage from './components/HomePage/Main'
+import Destination from './components/Destination/MainDestination';
+import DestinationItaly from './components/DestinationItaly/MainDestinationItaly';
+import About from './components/About/MainAbout';
+import Fag from './components/Fag/MainFag';
+import Blog from './components/Blog/MainBlog'
+import Contact from './components/Contact/MainContact'
 import SignIn from './pages/SignIn';
 import SignInMain from '..//src/components/SignIn/main'
-import ForgotPasswordMain from './components/ForgotPassword/ForgotPassword';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 import CreateAccount from './components/CreateAccount/CreateAccount';
+import Error from './pages/Error';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Homepage />}>
-          <Route index element={ <HomePageMain />} />
-          <Route path='destination'>
-            <Route  index element={ <MainDestination /> } />
-            <Route path='italy' element={ <MainDestinationItaly/> }/>
-          </Route>
-          <Route path='about'  element={ <MainAbout /> }/>
-          <Route path='fag'  element={ <MainFag /> }/>
-          <Route path='blog'  element={ <MainBlog /> }/>
-          <Route path='contact'  element={ <MainContact /> }/>
+        <Route path='/' element={ <Pages />}>
+            <Route index element={ <HomePage />} />
+            <Route path='destination'>
+              <Route  index element={ <Destination /> } />
+              <Route path='italy' element={ <DestinationItaly/> }/>
+            </Route>
+            <Route path='about'  element={ <About /> }/>
+            <Route path='fag'  element={ <Fag /> }/>
+            <Route path='blog'  element={ <Blog /> }/>
+            <Route path='contact'  element={ <Contact /> }/>
         </Route>
 
         <Route path="/signin" element= { <SignIn /> } >
-          <Route index element= { <SignInMain /> } />
-          <Route path='forgot-password' element={ < ForgotPasswordMain /> }/>
-          <Route path='create-account' element={ < CreateAccount /> }/>
+            <Route index element= { <SignInMain /> } />
+            <Route path='forgot-password' element={ < ForgotPassword /> }/>
+            <Route path='create-account' element={ < CreateAccount /> }/>
         </Route>
+        <Route path='*' element={< Error />} />
       </Routes>
     </BrowserRouter>
   );

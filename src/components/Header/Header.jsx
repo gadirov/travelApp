@@ -7,16 +7,16 @@ import Logo from '..//..//assets/Logo.svg'
 import './Header.css'
 export default function Header() {
 
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 720);
-    const [isClickedHamburgerMenu, setisClickedHamburgerMenu] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 720)
+    const [isClickedHamburgerMenu, setisClickedHamburgerMenu] = useState(false)
 
     useEffect(() => {
       const handleResize = () => {
-        setIsSmallScreen(window.innerWidth <= 720);
+        setIsSmallScreen(window.innerWidth <= 720)
       };
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("resize", handleResize)
       return () => {
-        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("resize", handleResize)
       };
     }, []);
 

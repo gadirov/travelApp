@@ -372,11 +372,67 @@ section{
   color: #fff;
   cursor: pointer;
 }
+/* Error Page */
+.error{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error img{
+  width: 400px;
+}
+.error .firstsection{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+.error .firstsection h2{
+  font-size: 30px;
+  margin: 30px 0 10px 0;
+}
+.error .firstsection p{
+  text-align: center;
+  margin: 6px 0 50px 0;
+}
+
+.error .secondsection{
+  display: flex;
+  gap: 80px;
+}
+.error .secondsection button{
+  background-color: #133e72;
+  padding: 10px 32px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 2px;
+  border:none;
+  cursor: pointer;
+}
+.error .secondsection button:hover{
+  background-color: #1d4679;
+  transition: .5s;
+}
+.error .secondsection .goback{
+  background-color: #f0f4fb;
+  color: black;
+}
+.error .secondsection .goback:hover{
+  background-color: #e0e9f8;
+  transition: .5s;
+}
+.error .secondsection button a{
+  color: #fff;
+  text-decoration: none;
+}
 
 
+/* Responsive section */
 @media screen and (max-width: 1300px) {
   .section_2 .cards {
-    grid-template-columns: auto auto;
+    overflow-x: auto;
   }
   .card {
     width: 40vw;
@@ -390,9 +446,10 @@ section{
   }
 }
 
+
 @media screen and (max-width: 850px) {
   .section_2 .cards {
-    grid-template-columns: auto;
+    overflow-x: auto;
   }
   .card {
     width: 90vw;
@@ -411,60 +468,66 @@ section{
 }
 
 @media screen and (max-width: 550px) {
-  .section_1{
-    width: 90vw;
-    height: 350px;
-  }
-  .section-text {
-    width: 80vw;
-  }
-  .section-text h1 {
-    font-size: 30px;
-  }
-  .search-bar {
-    width: 300px;
-    padding: 0px 8px 0px 24px
-  } 
-  #section-5 {
-    height: 500px;
-  } 
-  .section-5 {
-    width: 350px;
-    margin: 0 10px 10px 0;
-  }
-  .topSection-5{
-    height: 200px;
-    padding: 16px;
-  }
-  .topSection-5 p{
-    font-size: 14px;
-  }
+    .section_1{
+      width: 90vw;
+      height: 350px;
+    }
+    .section-text {
+      width: 80vw;
+    }
+    .section-text h1 {
+      font-size: 30px;
+    }
+    .search-bar {
+      width: 300px;
+      padding: 0px 8px 0px 24px
+    } 
+    #section-5 {
+      height: 500px;
+    } 
+    .section-5 {
+      width: 350px;
+      margin: 0 10px 10px 0;
+    }
+    .topSection-5{
+      height: 200px;
+      padding: 16px;
+    }
+    .topSection-5 p{
+      font-size: 14px;
+    }
 
-  #our-destination .destination {
-    margin: 0;
-    width: 75vw;
-  }
-  #our-destination div{
-    margin: 0 20px;
-  }
-  #our-destination div h1 {
-    font-size: 25px;
-  }
-  #our-destination .destination p {
-    padding: 0;
-    margin: 24px 0 24px 0;
-    font-size: 16px;
-  }
-  #joinus-section h1 {
-    font-size: 32px;
-  }
-  #joinus-section p {
-    font-size: 16px;
-  }
-  #joinus-section .email-part{
-    padding: 0 8px 0 24px;
-  }
-  #joinus-section .email-part .signup {
-    padding: 16px;
+    #our-destination .destination {
+      margin: 0;
+      width: 75vw;
+    }
+    #our-destination div{
+      margin: 0 20px;
+    }
+    #our-destination div h1 {
+      font-size: 25px;
+    }
+    #our-destination .destination p {
+      padding: 0;
+      margin: 24px 0 24px 0;
+      font-size: 16px;
+    }
+    #joinus-section h1 {
+      font-size: 32px;
+    }
+    #joinus-section p {
+      font-size: 16px;
+    }
+    #joinus-section .email-part{
+      padding: 0 8px 0 24px;
+    }
+    #joinus-section .email-part .signup {
+      padding: 16px;
+    }
+    .error img{
+      width: 300px;
+    }
+    .error .secondsection {
+      gap: 40px;
   }
 }

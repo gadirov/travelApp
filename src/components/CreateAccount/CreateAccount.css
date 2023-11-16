@@ -1,0 +1,7 @@
+.create-page-account{
+    display: flex;
+    flex-direction: column !important;
+}
+.topLogoCreateSection h1{
+    font-size: 24px !important;
+}
